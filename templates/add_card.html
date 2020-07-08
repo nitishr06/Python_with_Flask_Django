@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Add Card{% endblock %}
+{% block content %}
+    <h1>Add Card</h1>
+    <form method="post">
+        <p>
+            Questions:
+            <input type="text" name = "question">
+        </p>
+        <p>
+            Answers:
+            <input type="text" name = "answer">
+        </p>
+        <button type="submit">Create</button>
+
+    </form>
+{% endblock %}
